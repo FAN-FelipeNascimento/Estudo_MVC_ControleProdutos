@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Estudo MVC";
+}
+
+<div class="jumbotron">
+    <h1>MVC - Estudo 1</h1>
+    <p class="lead">Estudo MVC, Controle de produtos</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Produtos</h2>
+        <p>
+            Permite listar, cadastrar, editar e deletar Produtos.
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("Index","Produto")">Lista de Produtos &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Cliente</h2>
+        <p>Permite listar, cadastrar, editar e deletar Clientes.</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index","Cliente")">Lista de Clientes &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Pedidos</h2>
+        <p>Permite listar, cadastrar, editar e deletar Pedidos.</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index","Pedido")">Lista de Pedidos &raquo;</a></p>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Estudo_MVC_1.Models.Produto_Model>
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Cadastro de Produto", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DescricaoProduto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValorProduto)
+        </th>
+        <th></th>
+    </tr>
+
+@*@foreach (var item in Model) {*@
+    <tr>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.DescricaoProduto)*@
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.ValorProduto)*@
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.IdProduto }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdProduto }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdProduto })*@
+        </td>
+    </tr>
+@*}*@
+
+</table>

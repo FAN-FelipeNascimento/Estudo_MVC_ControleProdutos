@@ -1,0 +1,30 @@
+﻿@model Estudo_MVC_1.Models.Produto_Model
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <h4>Produto_Model</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DescricaoProduto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescricaoProduto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorProduto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorProduto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdProduto }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

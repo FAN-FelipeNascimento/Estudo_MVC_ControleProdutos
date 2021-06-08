@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Estudo_MVC_1.Models.Cliente_Model>
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar Cliente", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AldeiaCliente)
+        </th>
+        <th></th>
+    </tr>
+
+@*@foreach (var item in Model) {*@
+    <tr>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.NomeCliente)*@
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.EmailCliente)*@
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.AldeiaCliente)*@
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.IdCliente }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdCliente }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdCliente })*@
+        </td>
+    </tr>
+@*}*@
+
+</table>
